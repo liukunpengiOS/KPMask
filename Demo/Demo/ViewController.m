@@ -7,23 +7,23 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "KPMask.h"
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)showMask:(UIButton *)sender {
+    
+    UIView *demo = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, 100)];
+    demo.backgroundColor = [UIColor whiteColor];
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureEvent:)];
+    [demo addGestureRecognizer:tapGesture];
+    
+    [[KPMask shareMask] configMaskAboveView:demo];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)tapGestureEvent:(UITapGestureRecognizer *)tagGesture {
+    
+    [[KPMask shareMask] hidden];
 }
-
 
 @end

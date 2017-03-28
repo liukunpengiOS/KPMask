@@ -30,12 +30,21 @@
     return mask;
 }
 
+#pragma mark - pubilc methods
+
 - (void)configMaskAboveView:(UIView *)view {
     
     _aboveView = view;
     [self configMaskView:_aboveView];
     [self showMaskView:_aboveView];
 }
+
+- (void)hidden {
+    
+    [self hiddenMaskView];
+}
+
+#pragma mark - private methods
 
 - (void)configMaskView:(UIView *)aboveView {
 
@@ -98,6 +107,8 @@
     _aboveView.center = CGPointMake(CGRectGetWidth(_aboveView.frame)/2,y);
     [_aboveView.layer addAnimation:bounceKeyFrameAnimation forKey:nil];
 }
+
+#pragma mark - event response
 
 - (void)gestureEvent {
     

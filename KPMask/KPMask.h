@@ -11,17 +11,22 @@
 @interface KPMask : UIView
 
 /**
- *  遮罩单例
+ *  Mask单例
  *
  *  @return 返回遮罩视图实例
  */
 + (instancetype)shareMask;
 
 /**
- *  配置遮罩视图
+ *  呈现Mask
  *
- *  @param view 显示在遮罩之上的视图
+ *  @param view 显示在Mask之上的视图
  */
 - (void)configMaskAboveView:(UIView *)view;
+
+/**
+ *  隐藏Mask
+ */
+- (void)hidden;
 
 @end
