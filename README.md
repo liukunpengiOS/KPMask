@@ -15,9 +15,13 @@ Easy bulid a MaskView
 ---
 
 ```
+呈现
 [[KPMaskView shareMask] configMaskAboveView:"你的View"];
+隐藏
+[[KPMask shareMask] hidden];
 
 ```
+
 
 许可证
 -------

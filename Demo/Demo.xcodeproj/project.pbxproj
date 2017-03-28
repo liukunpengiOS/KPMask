@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4E23CD1E89FA710089D2EC /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A4E23C91E89FA710089D2EC /* easing.c */; };
+		2A4E23CE1E89FA710089D2EC /* YXEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4E23CC1E89FA710089D2EC /* YXEasing.m */; };
 		2A58016A1E890FCB00508FE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5801691E890FCB00508FE5 /* main.m */; };
 		2A58016D1E890FCB00508FE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A58016C1E890FCB00508FE5 /* AppDelegate.m */; };
 		2A5801701E890FCB00508FE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A58016F1E890FCB00508FE5 /* ViewController.m */; };
@@ -14,11 +16,13 @@
 		2A5801751E890FCB00508FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5801741E890FCB00508FE5 /* Assets.xcassets */; };
 		2A5801781E890FCB00508FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5801761E890FCB00508FE5 /* LaunchScreen.storyboard */; };
 		2AE235451E89F79100A9A3AF /* KPMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE235441E89F79100A9A3AF /* KPMask.m */; };
-		2AE2354B1E89F79800A9A3AF /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 2AE235471E89F79800A9A3AF /* easing.c */; };
-		2AE2354C1E89F79800A9A3AF /* YXEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2354A1E89F79800A9A3AF /* YXEasing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A4E23C91E89FA710089D2EC /* easing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = easing.c; sourceTree = "<group>"; };
+		2A4E23CA1E89FA710089D2EC /* easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easing.h; sourceTree = "<group>"; };
+		2A4E23CB1E89FA710089D2EC /* YXEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXEasing.h; sourceTree = "<group>"; };
+		2A4E23CC1E89FA710089D2EC /* YXEasing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXEasing.m; sourceTree = "<group>"; };
 		2A5801651E890FCB00508FE5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5801691E890FCB00508FE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A58016B1E890FCB00508FE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,10 +35,6 @@
 		2A5801791E890FCB00508FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AE235431E89F79100A9A3AF /* KPMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPMask.h; sourceTree = "<group>"; };
 		2AE235441E89F79100A9A3AF /* KPMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPMask.m; sourceTree = "<group>"; };
-		2AE235471E89F79800A9A3AF /* easing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = easing.c; sourceTree = "<group>"; };
-		2AE235481E89F79800A9A3AF /* easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easing.h; sourceTree = "<group>"; };
-		2AE235491E89F79800A9A3AF /* YXEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXEasing.h; sourceTree = "<group>"; };
-		2AE2354A1E89F79800A9A3AF /* YXEasing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXEasing.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +48,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A4E23C81E89FA710089D2EC /* YXEasing */ = {
+			isa = PBXGroup;
+			children = (
+				2A4E23C91E89FA710089D2EC /* easing.c */,
+				2A4E23CA1E89FA710089D2EC /* easing.h */,
+				2A4E23CB1E89FA710089D2EC /* YXEasing.h */,
+				2A4E23CC1E89FA710089D2EC /* YXEasing.m */,
+			);
+			path = YXEasing;
+			sourceTree = "<group>";
+		};
 		2A58015C1E890FCB00508FE5 = {
 			isa = PBXGroup;
 			children = (
+				2A4E23C81E89FA710089D2EC /* YXEasing */,
 				2AE235421E89F79100A9A3AF /* KPMask */,
-				2AE235461E89F79800A9A3AF /* YXEasing */,
 				2A5801671E890FCB00508FE5 /* Demo */,
 				2A5801661E890FCB00508FE5 /* Products */,
 			);
@@ -98,18 +109,6 @@
 			);
 			name = KPMask;
 			path = ../KPMask;
-			sourceTree = "<group>";
-		};
-		2AE235461E89F79800A9A3AF /* YXEasing */ = {
-			isa = PBXGroup;
-			children = (
-				2AE235471E89F79800A9A3AF /* easing.c */,
-				2AE235481E89F79800A9A3AF /* easing.h */,
-				2AE235491E89F79800A9A3AF /* YXEasing.h */,
-				2AE2354A1E89F79800A9A3AF /* YXEasing.m */,
-			);
-			name = YXEasing;
-			path = ../YXEasing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,11 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A5801701E890FCB00508FE5 /* ViewController.m in Sources */,
-				2AE2354C1E89F79800A9A3AF /* YXEasing.m in Sources */,
+				2A4E23CE1E89FA710089D2EC /* YXEasing.m in Sources */,
 				2A58016D1E890FCB00508FE5 /* AppDelegate.m in Sources */,
 				2AE235451E89F79100A9A3AF /* KPMask.m in Sources */,
 				2A58016A1E890FCB00508FE5 /* main.m in Sources */,
-				2AE2354B1E89F79800A9A3AF /* easing.c in Sources */,
+				2A4E23CD1E89FA710089D2EC /* easing.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
